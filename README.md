@@ -5,7 +5,7 @@
 ### Crop pH Prediction Repository - https://github.com/anandhamurthy/pH-API
 
 
-![PF](https://github.com/anandhamurthy/Project_Farmer/blob/master/screenshots/s_1.PNG)
-![PF](https://github.com/anandhamurthy/Project_Farmer/blob/master/screenshots/s_2.PNG)
-![PF](https://github.com/anandhamurthy/Project_Farmer/blob/master/screenshots/s_3.PNG)
-![PF](https://github.com/anandhamurthy/Project_Farmer/blob/master/screenshots/s_4.PNG)
+![PF](https://github.com/anandhamurthy/Project_Farmer/blob/master/screenshots/ss1.JPG)
+![PF](https://github.com/anandhamurthy/Project_Farmer/blob/master/screenshots/ss2.JPG)
+![PF](https://github.com/anandhamurthy/Project_Farmer/blob/master/screenshots/ss3.JPG)
+![PF](https://github.com/anandhamurthy/Project_Farmer/blob/master/screenshots/ss4.JPG)
