@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/colorWhite"
+    android:layout_height="match_parent"
+    tools:context=".Login.LoginActivity">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="-250dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginRight="-80dp"
+        android:layout_marginTop="-400dp"
+        android:src="@drawable/top_bg"/>
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:gravity="center"
+            android:layout_marginTop="300dp"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:id="@+id/farmer"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:background="@color/colorPrimaryDark"
+                android:fontFamily="@font/nunito_bold"
+                android:text="Farmer"
+                android:textAllCaps="false"
+                android:textColor="@color/colorWhite"
+                android:textSize="15dp" />
+
+            <Button
+                android:id="@+id/user"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:background="@color/colorPrimaryDark"
+                android:fontFamily="@font/nunito_bold"
+                android:text="User"
+                android:layout_below="@+id/farmer"
+                android:textAllCaps="false"
+                android:textColor="@color/colorWhite"
+                android:textSize="15dp" />
+
+        </RelativeLayout>
+
+</RelativeLayout >

@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@color/colorWhite"
+    android:layout_height="match_parent"
+    tools:context=".CropResultActivity">
+
+
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_margin="10dp"
+            android:id="@+id/tab_layout"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="About"
+                android:layout_centerVertical="true"
+                android:textSize="20dp"
+                android:fontFamily="@font/nunito_bold"
+                android:layout_margin="5dp"
+                android:textColor="@color/colorBlack"
+                android:textStyle="bold"
+                android:id="@+id/about"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Weather"
+                android:layout_centerVertical="true"
+                android:textSize="15dp"
+                android:fontFamily="@font/nunito"
+                android:layout_toRightOf="@+id/about"
+                android:layout_margin="5dp"
+                android:textColor="@color/colorBlack"
+                android:textStyle="bold"
+                android:id="@+id/weather"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Disease"
+                android:fontFamily="@font/nunito"
+                android:layout_centerVertical="true"
+                android:layout_margin="5dp"
+                android:layout_toRightOf="@+id/weather"
+                android:textSize="15dp"
+                android:textColor="@color/colorBlack"
+                android:textStyle="bold"
+                android:id="@+id/disease"/>
+
+        </RelativeLayout>
+
+
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/crop_details_viewpager"
+        android:layout_width="match_parent"
+        android:layout_below="@+id/tab_layout"
+        android:layout_height="match_parent" />
+
+</RelativeLayout>

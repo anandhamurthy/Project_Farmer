@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".WeatherFragment">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:background="@color/colorWhite"
+        android:layout_height="match_parent">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="vertical"
+                android:layout_height="match_parent">
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/current_weather_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:elevation="10dp"
+                    app:cardCornerRadius="5dp">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:id="@+id/current_temperature"
+                            android:layout_width="wrap_content"
+                            android:layout_centerHorizontal="true"
+                            android:fontFamily="@font/nunito_bold"
+                            android:textColor="@color/colorBlack"
+                            android:layout_height="wrap_content"
+                            android:textSize="35dp" />
+
+                        <TextView
+                            android:id="@+id/current_desc"
+                            android:layout_below="@+id/current_temperature"
+                            android:fontFamily="@font/nunito"
+                            android:layout_centerHorizontal="true"
+                            android:textColor="@color/colorBlack"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="20dp"/>
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/current_desc">
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="5dp"
+                                android:layout_centerVertical="true"
+                                android:id="@+id/weather_details"
+                                android:orientation="vertical">
+
+
+                                <TextView
+                                    android:id="@+id/current_humidity"
+                                    android:layout_width="wrap_content"
+                                    android:textColor="@color/colorBlack"
+                                    android:textSize="18dp"
+                                    android:layout_height="wrap_content"
+                                    android:fontFamily="@font/nunito_bold"/>
+
+                                <TextView
+                                    android:id="@+id/current_wind"
+                                    android:textColor="@color/colorBlack"
+                                    android:layout_width="wrap_content"
+                                    android:textSize="18dp"
+                                    android:layout_height="wrap_content"
+                                    android:fontFamily="@font/nunito_bold"/>
+
+                            </LinearLayout>
+
+
+                            <com.airbnb.lottie.LottieAnimationView
+                                android:id="@+id/current_weather_icon"
+                                android:layout_width="100dp"
+                                android:layout_height="100dp"
+                                android:layout_centerVertical="true"
+                                android:layout_margin="5dp"
+                                android:layout_alignParentRight="true"
+                                app:lottie_autoPlay="true"
+                                app:lottie_loop="true" />
+
+                        </RelativeLayout>
+
+
+                    </RelativeLayout>
+                </androidx.cardview.widget.CardView>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Next 7 Days"
+                        android:id="@+id/next_title"
+                        android:layout_margin="5dp"
+                        android:fontFamily="@font/nunito_bold"
+                        android:textColor="@color/colorBlack"
+                        android:textSize="18dp"/>
+
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/next_weather_list"
+                        android:layout_below="@+id/next_title"/>
+
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <com.airbnb.lottie.LottieAnimationView
+                        android:layout_width="150dp"
+                        android:id="@+id/no_alerts"
+                        app:lottie_loop="true"
+                        android:layout_centerInParent="true"
+                        android:layout_margin="40dp"
+                        android:layout_centerHorizontal="true"
+                        android:background="#00FFFFFF"
+                        app:lottie_autoPlay="true"
+                        android:layout_height="150dp"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Alerts"
+                        android:id="@+id/alerts_title"
+                        android:layout_margin="5dp"
+                        android:fontFamily="@font/nunito_bold"
+                        android:textColor="@color/colorBlack"
+                        android:textSize="18dp"/>
+
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/alerts_list"
+                        android:layout_below="@+id/alerts_title"/>
+                </RelativeLayout>
+
+            </LinearLayout>
+        </ScrollView>
+    </RelativeLayout>
+
+</FrameLayout>

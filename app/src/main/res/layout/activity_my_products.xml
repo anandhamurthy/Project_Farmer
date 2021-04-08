@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorWhite"
+    tools:context=".MyProductsActivity">
+
+
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_centerInParent="true"
+        android:id="@+id/no_layout"
+        android:layout_height="wrap_content">
+
+        <com.airbnb.lottie.LottieAnimationView
+            android:layout_width="150dp"
+            android:id="@+id/animationView"
+            app:lottie_loop="true"
+            android:layout_centerInParent="true"
+            android:layout_margin="40dp"
+            android:layout_centerHorizontal="true"
+            android:background="#00FFFFFF"
+            app:lottie_autoPlay="true"
+            android:layout_height="150dp"/>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorBlack"
+            android:text="No Crop Sold Yet!"
+            android:fontFamily="@font/nunito_bold"
+            android:textSize="16dp"
+            android:layout_below="@+id/animationView"
+            android:layout_centerHorizontal="true"
+            android:gravity="center"/>
+
+    </RelativeLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_margin="5dp"
+        android:layout_height="match_parent"
+        android:id="@+id/crops_list"/>
+
+
+</RelativeLayout>

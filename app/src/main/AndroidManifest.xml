@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.projectfarmer">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/icon"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".AddProductActivity"
+            android:label="Add Products"
+            android:theme="@style/ProfileTheme"/>
+        <activity android:name=".AddReportActivity"
+            android:label="Add Reports"
+            android:theme="@style/ProfileTheme"/>
+        <activity android:name=".MyReportsActivity"
+            android:label="My Reports"/>
+        <activity android:name=".MyProductsActivity"
+            android:label="My Products"/>
+        <activity android:name=".CropResultActivity"
+            android:label="Crop Result"/>
+        <activity android:name=".CropDetailsActivity"
+            android:label="Crop Details"/>
+        <activity android:name=".PHResultActivity"
+            android:label="PH Result"/>
+        <activity android:name=".AddCropActivity"
+            android:label="Add Crop"/>
+        <activity android:name=".NewCropActivity"
+            android:label="New Crop"/>
+        <activity
+            android:name=".Login.StartActivity"
+            android:theme="@style/LoginTheme" />
+        <activity android:name=".MainActivity" />
+        <activity
+            android:name=".Login.LoginActivity"
+            android:theme="@style/LoginTheme" />
+        <activity
+            android:name=".Login.VerifyActivity"
+            android:theme="@style/LoginTheme" />
+        <activity
+            android:name=".ProfileActivity"
+            android:theme="@style/ProfileTheme" />
+        <activity
+            android:name=".Login.SplashActivity"
+            android:theme="@style/LoginTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.theartofdev.edmodo.cropper.CropImageActivity"
+            android:theme="@style/Base.Theme.AppCompat" />
+    </application>
+
+</manifest>

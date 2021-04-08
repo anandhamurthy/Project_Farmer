@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@color/colorWhite"
+    android:layout_height="match_parent"
+    tools:context=".NewCropActivity">
+
+    <Button
+        android:id="@+id/suggest"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:padding="5dp"
+        android:layout_centerHorizontal="true"
+        android:background="@color/colorPrimaryDark"
+        android:fontFamily="@font/nunito_bold"
+        android:text="Suggest Crop"
+        android:textAllCaps="false"
+        android:textColor="@color/colorWhite"
+        android:textSize="15dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Crops"
+        android:layout_marginLeft="10dp"
+        android:fontFamily="@font/nunito_bold"
+        android:textSize="20dp"
+        android:layout_below="@+id/suggest"
+        android:textColor="@color/colorBlack"
+        android:id="@+id/crop_title"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/crop_title"
+        android:id="@+id/crop_response_list"/>
+
+
+</RelativeLayout>

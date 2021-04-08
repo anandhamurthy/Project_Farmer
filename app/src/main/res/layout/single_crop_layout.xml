@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_marginLeft="10dp"
+    app:cardCornerRadius="5dp"
+    android:layout_marginRight="10dp"
+    android:layout_marginBottom="5dp"
+    android:layout_marginTop="5dp"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_margin="5dp"
+        android:id="@+id/product_details"
+        android:layout_height="wrap_content">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_margin="5dp"
+            android:id="@+id/crop_image"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorBlack"
+            android:textSize="18dp"
+            android:layout_marginTop="15dp"
+            android:layout_toRightOf="@+id/crop_image"
+            android:id="@+id/crop_name"
+            android:fontFamily="@font/nunito_bold"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorBlack"
+            android:textSize="15dp"
+            android:layout_marginTop="15dp"
+            android:layout_below="@+id/crop_name"
+            android:layout_toRightOf="@+id/crop_image"
+            android:id="@+id/description"
+            android:fontFamily="@font/nunito_bold"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:layout_alignParentRight="true"
+            android:src="@drawable/more"
+            android:id="@+id/crop_more"/>
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.8dp"
+            android:id="@+id/space_line"
+            android:layout_below="@+id/crop_image"
+            android:background="@android:color/darker_gray"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="right"
+            android:layout_marginTop="5dp"
+            android:layout_below="@+id/space_line"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="pH "
+                android:gravity="center"
+                android:fontFamily="@font/nunito_bold"
+                android:layout_margin="2dp"
+                android:textColor="@color/colorBlack"
+                android:drawablePadding="5dp"
+                android:drawableRight="@drawable/level_done"
+                android:id="@+id/level_1"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="Crop"
+                android:gravity="center"
+                android:fontFamily="@font/nunito_bold"
+                android:layout_margin="2dp"
+                android:textColor="@color/colorBlack"
+                android:drawablePadding="5dp"
+                android:drawableRight="@drawable/level_undone"
+                android:id="@+id/level_2"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="Harvested"
+                android:gravity="center"
+                android:fontFamily="@font/nunito_bold"
+                android:layout_margin="2dp"
+                android:textColor="@color/colorBlack"
+                android:drawablePadding="5dp"
+                android:drawableRight="@drawable/level_undone"
+                android:id="@+id/level_3"/>
+
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+
+</androidx.cardview.widget.CardView>

@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/colorWhite"
+    android:layout_height="match_parent"
+    tools:context=".Login.LoginActivity">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="-250dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginRight="-80dp"
+        android:layout_marginTop="-400dp"
+        android:src="@drawable/top_bg"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+            <ImageView
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_marginTop="300dp"
+                android:id="@+id/icon"
+                android:src="@drawable/icon"
+                android:layout_centerHorizontal="true"/>
+
+
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/phone_number_layout"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/phone_number"
+                android:layout_margin="15dp"
+                android:layout_below="@+id/icon">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/login_phone_number"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:maxLength="10"
+                    android:digits="0123456789"
+                    app:drawableTint="@color/colorPrimaryDark"
+                    android:drawableLeft="@drawable/phone"
+                    android:drawablePadding="10dp"
+                    android:layout_margin="5dp"
+                    android:fontFamily="@font/nunito"
+                    android:inputType="phone" />
+            </com.google.android.material.textfield.TextInputLayout>
+        </RelativeLayout>
+
+
+
+
+    </ScrollView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/next"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="30dp"
+            android:background="@color/colorPrimaryDark"
+            android:fontFamily="@font/nunito_bold"
+            android:text="Next"
+            android:textAllCaps="false"
+            android:textColor="@color/colorWhite"
+            android:textSize="15dp" />
+    </LinearLayout>
+
+
+</RelativeLayout >

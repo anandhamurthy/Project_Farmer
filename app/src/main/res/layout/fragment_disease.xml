@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".DiseaseFragment">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:background="@color/colorWhite"
+        android:layout_height="match_parent">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_marginTop="10dp"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:layout_width="250dp"
+                    android:layout_height="200dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_margin="5dp"
+                    android:id="@+id/land_capture"
+                    android:src="@drawable/disease"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Upload your Disease Image"
+                    android:fontFamily="@font/nunito_bold"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="16dp"
+                    android:layout_centerHorizontal="true"
+                    android:gravity="center"
+                    android:id="@+id/land_capture_text"
+                    android:layout_below="@+id/land_capture"
+                    android:layout_margin="2dp"/>
+
+                <Button
+                    android:id="@+id/upload"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:padding="5dp"
+                    android:layout_below="@+id/land_capture_text"
+                    android:layout_centerHorizontal="true"
+                    android:background="@color/colorPrimaryDark"
+                    android:fontFamily="@font/nunito_bold"
+                    android:text="Upload Image"
+                    android:textAllCaps="false"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="15dp" />
+
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_marginLeft="10dp"
+                    android:layout_below="@+id/upload"
+                    app:cardCornerRadius="5dp"
+                    android:visibility="gone"
+                    android:id="@+id/disease_details"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_height="wrap_content">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_margin="5dp"
+                    android:layout_height="wrap_content">
+
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
+                        android:layout_margin="5dp"
+                        android:id="@+id/disease_image"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/colorBlack"
+                        android:textSize="18dp"
+                        android:layout_centerVertical="true"
+                        android:layout_toRightOf="@+id/disease_image"
+                        android:id="@+id/disease_name"
+                        android:fontFamily="@font/nunito"/>
+
+                    <Button
+                        android:id="@+id/predict"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp"
+                        android:padding="5dp"
+                        android:layout_centerVertical="true"
+                        android:layout_toRightOf="@+id/disease_image"
+                        android:background="@color/colorPrimaryDark"
+                        android:fontFamily="@font/nunito_bold"
+                        android:text="Predict"
+                        android:textAllCaps="false"
+                        android:textColor="@color/colorWhite"
+                        android:textSize="15dp" />
+
+
+                </RelativeLayout>
+                </androidx.cardview.widget.CardView>
+            </RelativeLayout>
+
+        </ScrollView>
+
+
+    </RelativeLayout>
+
+</FrameLayout>
